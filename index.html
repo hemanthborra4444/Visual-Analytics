@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected Scatterplot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        #fileInput {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+            background: #fff;
+            text-align: center;
+        }
+
+        #slider-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 30px;
+        }
+
+        #slider-container label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #slider-container input[type="range"] {
+            margin: 0 10px;
+            width: 200px;
+        }
+
+        #slider-container span {
+            font-size: 14px;
+            color: #555;
+        }
+
+        #axis-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #axis-container label {
+            font-weight: bold;
+        }
+
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 180px;
+        }
+
+        #chartContainer {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            height: 500px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #555;
+        } 
+  
+        #chartContainer::before {
+            content: "Your chart will appear here";
+            display: block;
+            text-align: center;
+        } 
+    </style>
+</head>
+<body> 
+    <h1>Visual Analytics Project</h1>
+    <h2>Hemanth Borra</h2>
+
+    <input type="file" id="fileInput" accept=".csv"> 
+
+    <div id="slider-container">
+        <div>
+            <label for="start-year">Start Year: </label>
+            <input type="range" id="start-year" min="minYear" max="maxYear" value="minYear">
+            <span id="start-year-value">Min Year</span>
+        </div>
+
+        <div>
+            <label for="end-year">End Year: </label>
+            <input type="range" id="end-year" min="minYear" max="maxYear" value="maxYear">
+            <span id="end-year-value">Max Year</span>
+        </div>
+    </div>
+
+    <div id="axis-container">
+        <div>
+            <label for="x-axis">X-axis:</label>
+            <select id="x-axis">
+                <option value="">Select X-axis</option>
+            </select>
+        </div>
+        <div>
+            <label for="y-axis">Y-axis:</label>
+            <select id="y-axis">
+                <option value="">Select Y-axis</option>
+            </select>
+        </div>
+        <div>
+            <label for="hue">Hue:</label>
+            <select id="hue">
+                <option value="">Select Hue</option>
+            </select>
+        </div>  
+    </div>  
+
+    <div id="chartContainer"></div> 
+ 
+    <script type="module" src="./libs/d3.v7.js"></script>
+    <script type="module" src="./connected-scatterplot.js"></script>
+</body>
+</html>

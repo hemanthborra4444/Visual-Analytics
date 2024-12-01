@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #0056b3;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 40px;
+            color: #0056b3;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            padding: 0 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00408b;
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Visual Analytics Project</h1>
+    </div>
+
+    <div class="center">
+        <h2>Hemanth Borra</h2>
+    </div>
+
+    <div class="content-wrapper">
+        <h3>Pan-Zoom Interface Overview</h3>
+        
+        <p>The pan-zoom interface provides interactive controls for manipulating the view of an SVG element. Below are the keys used to perform different actions:</p>
+
+        <ul>
+            <li><strong>w:</strong> Pan the view upward</li>
+            <li><strong>s:</strong> Pan the view downward</li>
+            <li><strong>a:</strong> Pan the view leftward</li>
+            <li><strong>d:</strong> Pan the view rightward</li>
+            <li><strong>i:</strong> Zoom in (shrink the view)</li>
+            <li><strong>o:</strong> Zoom out (enlarge the view)</li>
+        </ul>
+
+        <h3>Bivariate Colormap Description</h3>
+
+        <p>The colormap used for coloring the data points represents the relationship between the change in <strong>miles per person per year</strong> and the change in <strong>cost per gallon of gas</strong> relative to the previous plotted point's data value on the curve.</p>
+
+        <ul>
+            <li>The colorscale domain ranges from min to max of cost per gallon of gas.</li>
+            <li>The datapoint color ranges from blue to red.</li>
+        </ul>
+
+        <p>The dataset used in this project is centered around salary information, offering a comprehensive exploration of earnings across diverse categories. Acquired from Kaggle, the dataset provides valuable insights into salary trends, job roles, and experience levels.</p>
+
+        <p><strong>Source:</strong> The dataset was downloaded from Kaggle, a leading platform for dataset sharing, fostering community collaboration and exploration.</p>
+        
+        <!-- Add a button if needed -->
+        <!-- <button>Explore More</button> -->
+    </div>  
+
+</body>
+</html>

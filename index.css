@@ -1,0 +1,91 @@
+#tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    padding: 8px;
+    font: 12px sans-serif;
+    background: rgb(239, 238, 238);
+    border: solid 1px #aaa;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0.9;
+}
+/* General resets */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Controls section */
+.controls {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="file"], select, input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Slider container */
+#slider-container {
+    margin: 20px 0;
+}
+
+/* Chart box styling */
+.chart-box {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f4faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+    font-weight: bold;
+}
+ 
+/* For responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
