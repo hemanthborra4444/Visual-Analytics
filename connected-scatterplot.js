@@ -4,7 +4,7 @@ const colorScale = d3.scaleSequential(d3.interpolateSpectral);
 
 let data = [];
 let xaxis = "";
-let yaxis = "";
+let yaxis = ""; 
 let hueKey = "";
 
 document.getElementById('fileInput').addEventListener('change', function (event) {
